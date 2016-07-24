@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Registration Form</title>
+	<style>
+    
+	.main{
+	width:1000px;height:1000px;background-color:#ffffff;margin:auto;
+	}
+	 
+	</style>
+    <script src="countryscript.js">
+	
+	</script>
+
+	  <div class="main" >
+	   <form action=".html">
+	          <h2>Registration Form :</h2>
+	         
+		      <table bgcolor="#dddddd" height="80%" width="80%">
+			     <tr>
+				    <td><label for="First Name">First Name:</label></td>
+					<td style="float:left"><input type="text" placeholder="Enter First Name" id="First Name" 
+					required  pattern="[a-zA-Z]{3,}" title="please enter only characters and should be minium 3"></td>
+					<td style="float:left" >*</td>
+				 </tr>
+				 <tr>
+				    <td><label for="Last Name">Last Name:</label></td>
+					<td style="float:left"><input type="text" placeholder="Enter Last Name" id="Last Name" 
+					required  pattern="[a-zA-Z]{5,}" title="please enter only characters and should be minium 3"></td>
+					<td style="float:left" >*</td>
+				 </tr>
+				  <tr>
+				    <td><label for="Student Id">Student Id:</label></td><td><input type="Number" min="1" max="10000"  placeholder="Enter Student Id" id="Student Id"  required ></td>
+				 </tr>
+				 <tr>
+				    <td><label for="Email">Email:</label></td><td style="float:left"><input type="Email" placeholder="Enter Email" id="Email"  required></td>
+					<td style="float:left" >*</td>
+				 </tr>
+				 <tr>
+				    <td><label for="Mobile">Mobile:</label></td><td style="float:left" ><input type="mobile" placeholder="Enter Mobile" id="Mobile"  required></td>
+					
+				 </tr>
+				 <tr>
+				    <td><label for="gender">Gender:</td></label><td><input type="radio" value="" id="gender" name="gender">Male
+	                <input type="radio" value="" id="gender" name="gender">Female</td>
+                 </tr>
+				  <tr>
+				    <td><label for="date">DOB:</label></td><td><input type="date" placeholder="Enter date" id="date"  required></td>
+					
+				 </tr>
+				 
+				   <tr>
+				    <td><label for="">Major:</label></td><td>
+					  <select placeholder="Major">
+					  
+					    <option>Select Your Major</option>
+					    <option>Electrical Engineering</option>
+					    <option>Computer Engineering</option>
+						<option>Mechnical Engineering</option>
+				        <option>Civil Engineering</option>
+						
+					  </select>			
+					</td>
+				 </tr>
+				  <tr>
+                    <td><label for="Hobbies">Hobbies:</label></td><td>
+					    <input type="checkbox" value="" id="Hobbies" name="Hobbies">Playing Games
+						<input type="checkbox" value="" id="Hobbies" name="Hobbies">Reading Books <br>
+						<input type="checkbox" value="" id="Hobbies" name="Hobbies">Browsing
+						<input type="checkbox" value="" id="Hobbies" name="Hobbies">Gardening
+					</td>
+                  </tr>
+				  <tr>
+				    <td><label for="">Favorite Food:</label></td><td style="float:left">
+					  <select placeholder="Select Any Food">
+					    <option>Select Any Food</option>
+					     <optgroup label="Biryani's">
+						   <option>Veg-Biryani</option>
+						   <option>Chicken-Biryani</option>
+						   <option>Goat-Biryani</option>
+						   <option>Fish-Biryani</option>
+						 </optgroup>
+						 <optgroup label="Curries">
+						   <option>Veg-Curry</option>
+						   <option>Chicken-Curry</option>
+						   <option>Goat-Curry</option>
+						   <option>Fish-Curry</option>
+						 </optgroup>
+					
+						
+					  </select>			
+					</td>
+					
+				 </tr>
+				 <tr>
+				    <td><label for="range">Range:</label></td><td><input type="range" min="0" max="10" value="" placeholder="Enter range" id="range"  required ></td>
+				 </tr>
+				 <tr>
+				    <td><label for="color">Color:</label></td><td><input type="color"  value="" color:"#333333" placeholder="Enter color" id="color"  required ></td>
+				 </tr>
+				
+				  <tr>
+				    <td><label for="month">Month:</label></td><td><input type="month" placeholder="Enter month" id="month"  required></td>
+				 </tr>
+				  <tr>
+				    <td><label for="week">Week:</label></td><td><input type="week" placeholder="Enter week" id="week"  required></td>
+				 </tr>
+				  <tr>
+				    <td><label for="time">Time:</label></td><td><input type="time" placeholder="Enter time" id="time"  required></td>
+				 </tr>
+				 <tr>
+                   <td><label for="file">Upload PhotoCopy:</label></td><td> <input type="file" id="file" name="file"></td>
+                 </tr>
+				 <tr>
+				 
+				  <td>Select Country :</td>
+				  <td><select id="countries" onchange="selState()">
+				  
+			       <script>
+				       selCountry();
+			       </script>
+			
+		          </select>
+		          <select id="states" onchange="selCity()">
+			         <option>Select State</option>
+		          </select>
+		          <select id="city">
+			         <option>Select City</option>
+		          </select></td>
+				 
+				 </tr>
+				 <tr>
+                    <td><label for="Terms And Conditions"></label></td><td> <input type="checkbox" value="" id="Terms And Conditions" name="country">Terms And Conditions</td>
+                  </tr>
+				  <tr>
+				    <td></td><td><input type="submit"value="submit" required></td>
+				 </tr>
+				  
+			   </table>
+			  
+         </form>
+	 </div>
+  </head>
+  <body>
+  
+  </body>
+</html>
